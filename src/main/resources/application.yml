@@ -15,10 +15,17 @@ spring:
       ddl-auto: update
     show-sql: true
 
+openapi:
+  service:
+    title: order-service doc
+    version: 1.0.0
+    url: http://localhost:8080 #Gateway
+
 springdoc:
   api-docs:
-    path: /api-docs
+    path: /orders-service/v3/api-docs
   swagger-ui:
+    path: /orders-service/swagger-ui.html
     enabled: true
 
 feign:
